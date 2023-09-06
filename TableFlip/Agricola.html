@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Table Flip | Agricola</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+  <header>
+    <nav class="nav_bar">
+        <div class="logo_holder">
+            <a href="index.html">
+                <img src="img/TableFlip_logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="search_bar_holder">
+            <form action="#" class="search_box">
+                <input type="text" class="search_text" placeholder="search" required>
+                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </label>
+        <ul class="menu">
+            <li><a href="filter.html" class="menu_text">Games</a></li>
+            <li><a href="news.html" class="menu_text">News</a></li>
+            <li><a href="#" class="menu_text">Forums</a></li>
+            <li><a href="about.html" class="menu_text">About</a></li>
+            <li><a href="signin.html" class="menu_text" id="login-mobile">login</a></li>
+        </ul>
+        <div class="login_holder">
+            <div>
+                <a href="signin.html" class="login">login</a>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- detail -->
+    <div class="detail">
+      <div class="title_container" style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%), url(img/agricola_banner.jpg);">
+        <div class="title_img">
+          <img src="img/agricola_detail.jpg">
+        </div>
+        <div class="title_des">
+          <div class="game_title">
+            Agricola (2007)
+          </div>
+          <div class="quote">Build your farmstead by sowing fields and raising livestock. But don't forget to eat! </div>
+          <div class="rating">
+            <div class="average_rating">
+              <div class="rating_top">
+                <img src="img/BoardGameGeek_Logo.png" class="bgg_logo"> Rating
+              </div>
+              <div class="rating_bot">
+                <i class="fa-solid fa-star" style="color: #fae500;"></i>7.9 / 10
+              </div>
+            </div>
+            <div class="time">
+              <div class="rating_top"><h1>Playing Time</h1></div>
+              <div class="rating_bot">
+                <i class="fa-regular fa-clock" style="color: #ffffff;"></i>30 - 150 min
+              </div>
+            </div>
+            <div class="complexity">
+              <div class="rating_top"><h1>Complexity</h1></div>
+              <div class="rating_bot">
+                3.64 / 5
+              </div>
+            </div>
+          </div>
+          <div class="detail_tag">
+            <a href="#" class="detail_tag_wrapper">
+              <div class="detail_tag_container">
+                <span class="game_tags">
+                    Building
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="more_detail">
+        <div class="more_detail_left">
+          <div class="about">
+            <h2>About</h2>
+            <p>In Agricola, you're a farmer in a wooden shack with your spouse and little else. On a turn, you get to take only two actions, one for you and one for the spouse, from all the possibilities you'll find on a farm: collecting clay, wood, or stone; building fences; and so on. You might think about having kids in order to get more work accomplished, but first you need to expand your house. And what are you going to feed all the little rugrats?
+
+            The game supports many levels of complexity, mainly through the use (or non-use) of two of its main types of cards, Minor Improvements and Occupations. In the beginner's version (called the Family Variant in the U.S. release), these cards are not used at all<span id="dots">...</span><span id="more">. For advanced play, the U.S. release includes three levels of both types of cards; Basic (E-deck), Interactive (I-deck), and Complex (K-deck), and the rulebook encourages players to experiment with the various decks and mixtures thereof. Aftermarket decks such as the Z-Deck and the L-Deck also exist.
+
+            Agricola is a turn-based game. There are 14 game rounds occurring in 6 stages, with a Harvest at the end of each stage (after Rounds 4, 7, 9, 11, 13, and 14).
+            Each player starts with two playing tokens (farmer and spouse) and thus can take two turns, or actions, per round. There are multiple options, and while the game progresses, you'll have more and more: first thing in a round, a new action card is flipped over.
+            Problem: Each action can be taken by only one player each round, so it's important to do some things with high preference.
+            Each player also starts with a hand of 7 Occupation cards (of more than 160 total) and 7 Minor Improvement cards (of more than 140 total) that he/she may use during the game if they fit in his/her strategy. Speaking of which, there are countless strategies, some depending on your card hand. Sometimes it's a good choice to stay on course, and sometimes it is better to react to your opponents' actions...</span></p>
+            <button onclick="morelessbutton()" id="myBtn">Read more</button>
+          </div>
+          <div class="detail_img">
+            <h1>images</h1>
+            <div class="zoom_container">
+              <img src="img/agricola_banner.jpg" class="box">
+              <img src="img/agricola_detail1.jpg" class="box">
+              <img src="img/agricola_detail2.jpg" class="box">
+              <img src="img/agricola_detail3.jpg" class="box">
+            </div>
+          </div>
+          <div class="buys_now">
+            <h2>Buys Now</h2>
+            <a href="https://www.amazon.com/dp/B01DREMT68/ref=as_sl_pc_tf_til?tag=boardgamegeek-20&linkCode=w00&linkId=&creativeASIN=B01DREMT68" class="buy">
+              <div class="img_buy">
+                <img src="img/amazone_logo.png">
+                <img src="img/agricola_box.jpg">
+              </div>
+              <h1>$58.19</h1>
+            </a>
+          </div>
+        </div>
+        <div class="more_detail_mid">
+          <div class="rules">
+            <h1>Game rules</h1>
+            <div class="rules_file_container">
+              <div class="rules_file">
+                <a href="https://lookout-spiele.de/upload/en_agricolare.html_Rules_Agricola-RE_EN.pdf">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Rules</h1>
+                </a>
+              </div>
+              <div class="rules_file">
+                <a href="https://lookout-spiele.de/upload/en_agricolare.html_Appendix_Agricola-RE_EN.pdf">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Appendix</h1>
+                </a>
+              </div>
+              <div class="rules_file">
+                <a href="https://www.officialgamerules.org/agricola">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Official Agricola Rules</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="infomation">
+            <h1>Game information</h1>
+            <div class="information_container">
+              <img src="img/agricola_information.png">
+              <div class="info">
+              <div class="info_left">
+                <ul>
+                  <li>Designer</li>
+                  <li>Artist</li>
+                  <li>Publisher</li>
+                  <li>Year</li>
+                  <li>Number of players</li>
+                  <li>Game duration</li>
+                  <li>Complexity</li>
+                  <li>Strategy</li>
+                  <li>Luck</li>
+                  <li>Interaction</li>
+                </ul>
+              </div>
+              <div class="info_right">
+                <ul>
+                  <li>Uwe Rosenberg</li>
+                  <li>Klemens Franz</li>
+                  <li>Lookout Games</li>
+                  <li>2007</li>
+                  <li>1 - 4 players</li>
+                  <li>30 - 150 min</li>
+                  <li>3 / 5</li>
+                  <li>5 / 5</li>
+                  <li>1 / 5</li>
+                  <li>2 / 5</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="more_detail_right">
+          <div class="Video">
+            <h1>Videos</h1>
+            <iframe width="420" height="315"src="https://www.youtube.com/embed/LWuUuxbMDB0"></iframe>
+            <iframe width="420" height="315"src="https://www.youtube.com/embed/r2qkK6Q0weQ"></iframe>
+          </div>
+          <div class="more_info">
+            <h1> For more information</h1>
+            <a href="https://boardgamearena.com/gamepanel?game=agricola">
+                Agricola on BoardGameGeek
+              <img src="img/BoardGameGeek_Logo.png">
+            </a>
+            <a href="https://boardgamegeek.com/boardgame/31260/agricola">
+                Agricola on Boardgame Arena
+              <img src="img/BoardGameArena_Logo.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+<!-- footer -->
+    <div class="footer">
+      <div>
+          <i class="fa-regular fa-envelope"></i>
+          20t1020648@gmail.com
+      </div>
+      <div>
+          <i class="fa-solid fa-phone"></i>
+          0906494866
+      </div>
+      <div>
+          <i class="fa-brands fa-facebook"></i>
+          https://www.facebook.com/profile.php?id=100015448844410
+      </div>
+  </div>
+<script src="js/morelessbutton.js"></script>
+<script src="js/imgzoomfull.js"></script>
+</body>
+</html>

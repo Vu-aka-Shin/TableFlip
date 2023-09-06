@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Table Flip | Bubble Pop</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+  <header>
+    <nav class="nav_bar">
+        <div class="logo_holder">
+            <a href="index.html">
+                <img src="img/TableFlip_logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="search_bar_holder">
+            <form action="#" class="search_box">
+                <input type="text" class="search_text" placeholder="search" required>
+                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </label>
+        <ul class="menu">
+            <li><a href="filter.html" class="menu_text">Games</a></li>
+            <li><a href="news.html" class="menu_text">News</a></li>
+            <li><a href="#" class="menu_text">Forums</a></li>
+            <li><a href="about.html" class="menu_text">About</a></li>
+            <li><a href="signin.html" class="menu_text" id="login-mobile">login</a></li>
+        </ul>
+        <div class="login_holder">
+            <div>
+                <a href="signin.html" class="login">login</a>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- detail -->
+    <div class="detail">
+      <div class="title_container" style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%), url(img/bubblee_pop_banner.jpg);">
+        <div class="title_img">
+          <img src="img/bubblee_pop_detail.jpg">
+        </div>
+        <div class="title_des">
+          <div class="game_title">
+            Bubblee Pop (2016)
+          </div>
+          <div class="quote">Save the Bubblees on your planet by grouping them with friends!</div>
+          <div class="rating">
+            <div class="average_rating">
+              <div class="rating_top">
+                <img src="img/BoardGameGeek_Logo.png" class="bgg_logo"> Rating
+              </div>
+              <div class="rating_bot">
+                <i class="fa-solid fa-star" style="color: #fae500;"></i>6.2 / 10
+              </div>
+            </div>
+            <div class="time">
+              <div class="rating_top"><h1>Playing Time</h1></div>
+              <div class="rating_bot">
+                <i class="fa-regular fa-clock" style="color: #ffffff;"></i>12 - 20 min
+              </div>
+            </div>
+            <div class="complexity">
+              <div class="rating_top"><h1>Complexity</h1></div>
+              <div class="rating_bot">
+                1.31 / 5
+              </div>
+            </div>
+          </div>
+          <div class="detail_tag">
+            <a href="#" class="detail_tag_wrapper">
+              <div class="detail_tag_container">
+                <span class="game_tags">
+                    Best for 2
+                </span>
+              </div>
+            </a>
+            <a href="#" class="detail_tag_wrapper">
+              <div class="detail_tag_container">
+                <span class="game_tags">
+                  Family
+                </span>
+              </div>
+            </a>
+            <a href="#" class="detail_tag_wrapper">
+              <div class="detail_tag_container">
+                <span class="game_tags">
+                  Fantasy
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="more_detail">
+        <div class="more_detail_left">
+          <div class="about">
+            <h2>About</h2>
+            <p>
+              The Bubblees are small, round and colourful creatures with strange abilities.
+              
+              They hover in the Sky around the Planets and end up going from bubble to bubble, pulled by gravity.
+              
+              But when they land on the planets, the Bubblees often lose their<span id="dots">...</span><span id="more"> kin...
+
+              You need to gather and align them, matching their colors, and ensure the most Bubblees will land on your Planet's ground.</span></p>
+            <button onclick="morelessbutton()" id="myBtn">Read more</button>
+          </div>
+          <div class="detail_img">
+            <h1>images</h1>
+            <div class="zoom_container">
+              <img src="img/bubblee_pop_banner.jpg" class="box">
+              <img src="img/bubblee_pop_detail1.jpg" class="box">
+              <img src="img/bubblee_pop_detail2.jpg" class="box">
+              <img src="img/bubblee_pop_detail3.jpg" class="box">
+            </div>
+          </div>
+          <div class="buys_now">
+            <h2>Buys Now</h2>
+            <a href="https://www.amazon.com/Board-Game-Mosaic-Tile-Placement-Next-Move/dp/B077MZ2MPW" class="buy">
+              <div class="img_buy">
+                <img src="img/amazone_logo.png">
+                <img src="img/bubblee_pop_box.jpg">
+              </div>
+              <h1>$30.00</h1>
+            </a>
+          </div>
+        </div>
+        <div class="more_detail_mid">
+          <div class="rules">
+            <h1>Game rules</h1>
+            <div class="rules_file_container">
+              <div class="rules_file">
+                <a href="http://www.bankiiiz.com/BubbleePop/Rules.pdf">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Rules</h1>
+                </a>
+              </div>
+              <div class="rules_file">
+                <a href="https://cdn.1j1ju.com/medias/0b/4a/eb-bubblee-pop-level-up-rulebook.pdf">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Level Up! Rules</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="infomation">
+            <h1>Game information</h1>
+            <div class="information_container">
+              <img src="img/bubblee_pop_information.png">
+              <div class="info">
+              <div class="info_left">
+                <ul>
+                  <li>Designer</li>
+                  <li>Artist</li>
+                  <li>Publisher</li>
+                  <li>Year</li>
+                  <li>Number of players</li>
+                  <li>Game duration</li>
+                  <li>Complexity</li>
+                  <li>Strategy</li>
+                  <li>Luck</li>
+                  <li>Interaction</li>
+                </ul>
+              </div>
+              <div class="info_right">
+                <ul>
+                  <li>Gregory Oliver</li>
+                  <li>Alexey Rudikov</li>
+                  <li>Bankiziiiz Editions</li>
+                  <li>2016</li>
+                  <li>1 - 2 players</li>
+                  <li>12 - 20 min</li>
+                  <li>1 / 5</li>
+                  <li>2 / 5</li>
+                  <li>3 / 5</li>
+                  <li>0 / 5</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="more_detail_right">
+          <div class="Video">
+            <h1>Videos</h1>
+            <iframe width="420" height="315"src="https://www.youtube.com/embed/czaBxtw5FK0"></iframe>
+          </div>
+          <div class="more_info">
+            <h1> For more information</h1>
+            <a href="https://boardgamegeek.com/boardgame/192343/bubblee-pop">
+                Bubblee Pop on BoardGameGeek
+              <img src="img/BoardGameGeek_Logo.png">
+            </a>
+            <a href="https://boardgamearenacomgamepanelgame=bubbleepop">
+              Bubblee Pop on Boardgame Arena
+              <img src="img/BoardGameArena_Logo.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+<!-- footer -->
+    <div class="footer">
+      <div>
+          <i class="fa-regular fa-envelope"></i>
+          20t1020648@gmail.com
+      </div>
+      <div>
+          <i class="fa-solid fa-phone"></i>
+          0906494866
+      </div>
+      <div>
+          <i class="fa-brands fa-facebook"></i>
+          https://www.facebook.com/profile.php?id=100015448844410
+      </div>
+  </div>
+<script src="js/morelessbutton.js"></script>
+<script src="js/imgzoomfull.js"></script>
+</body>
+</html>

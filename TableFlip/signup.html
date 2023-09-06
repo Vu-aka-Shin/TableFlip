@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+    <div class="main-login">
+        <form action="" method="post" class="login_form" id="form-1">
+            <h1 class="login_heading">Become A Flipper</h1>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="verycoolname@domain.com" class="form-control">
+                <span class="form-message"></span>
+              </div>
+            
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" name="name" type="text" placeholder="nobody use irl name. Srly" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" type="password" placeholder="better write that down" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Confirm Password</label>
+                <input id="password_confirmation" name="password_confirmation" placeholder="dont u dare forget it already" type="password" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Sign up</button>
+
+            <a href="signin.html" class="link_form">already a flipper ? sign in</a>
+        </form>
+    </div>
+    <script src="js/validator.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+          // Mong muốn của chúng ta
+          Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#name'),
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 5),
+              Validator.isRequired('#password_confirmation'),
+              Validator.isConfirmed('#password_confirmation', function () {
+                return document.querySelector('#form-1 #password').value;
+              }, 'How dare you forget it already')
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+        });
+  
+      </script>
+</body>
+</html>

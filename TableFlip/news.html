@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Table Flip | News</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+    <header>
+        <nav class="nav_bar">
+            <div class="logo_holder">
+                <a href="index.html">
+                    <img src="img/TableFlip_logo.png" class="logo"/>
+                </a>
+            </div>
+            <div class="search_bar_holder">
+                <form action="#" class="search_box">
+                    <input type="text" class="search_text" placeholder="search" required>
+                        <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </label>
+            <ul class="menu">
+                <li><a href="filter.html" class="menu_text">Games</a></li>
+                <li><a href="news.html" class="menu_text">News</a></li>
+                <li><a href="#" class="menu_text">Forums</a></li>
+                <li><a href="about.html" class="menu_text">About</a></li>
+                <li><a href="signin.html" class="menu_text" id="login-mobile">login</a></li>
+            </ul>
+            <div class="login_holder">
+                <div>
+                    <a href="signin.html" class="login">login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- News -->
+    <div class="tophot">
+        <a href="#">HOT NEWS !</a>
+    <div class="top_news">
+        <div class="top_left">
+            <div class="hot_news">
+                <a href="https://boardgamegeek.com/blogpost/148535/gen-con-2023-preview-now-live">
+                    <img src="https://cf.geekdo-images.com/zA7r_6trPJc5qapFy9VdLEBiNZo=/825x450/filters:strip_icc()/https%3A%2F%2Fcf.geekdo-static.com%2Fcms%2F2023%2F06%2F05102526%2FGame-Release-%25E2%2580%2593-Homepage-Hero.jpg">
+                    <h1>Gen Con 2023 Preview</h1>
+                    <h2>by W Eric Martin | BoardGameGeek News</h2>
+                </a>
+            </div>
+        </div>
+        <div class="top_right">
+            <div class="top_side">
+                <a href="https://boardgamegeek.com/blogpost/148391/gloomhaven-second-edition-coming-2024">
+                    <img src="https://cf.geekdo-images.com/9CFdmtqEmZAKU2A8VlyXT2j6NPI=/80x80/filters:strip_icc()/https%3A%2F%2Fcf.geekdo-static.com%2Fcms%2F2023%2F06%2F01122250%2Fgl-sm.jpeg">
+                    <div class="top_side_tittle">
+                        <h1>Gloomhaven: Second Edition Coming in 2024</h1>
+                        <h2>by W Eric Martin | BoardGameGeek News</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="top_side">
+                <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30900">
+                    <img src="https://x.boardgamearena.net/data/newsimg/BANNER_ELAWA.jpg">
+                    <div class="top_side_tittle">
+                        <h1>ELAWA: Tribe and re-tribe!</h1>
+                        <h2>by DrClick | BoardGameArena News</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="top_side">
+                <a href="https://boardgamegeek.com/blogpost/141892/designer-diary-autobahn">
+                    <img src="https://cf.geekdo-images.com/LMWqrICsWZP57QMivZn212e5VaU=/80x80/filters:strip_icc()/https%3A%2F%2Fcf.geekdo-static.com%2Fcms%2F2023%2F06%2F03155605%2Fauto-sm.jpeg">
+                    <div class="top_side_tittle">
+                        <h1>Designer Diary: Autobahn</h1>
+                        <h2>by Fabio_ | BoardGameGeek News</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="top_side">
+                <a href="https://boardgamegeek.com/blogpost/148162/bgg-podcast-18-board-games-iconic-box-cover-art-is">
+                    <img src="https://cf.geekdo-images.com/9CFdmtqEmZAKU2A8VlyXT2j6NPI=/80x80/filters:strip_icc()/https%3A%2F%2Fcf.geekdo-static.com%2Fcms%2F2023%2F06%2F01122250%2Fgl-sm.jpeg">
+                    <div class="top_side_tittle">
+                        <h1>BGG Podcast #18: Board Games with Iconic Box Cover Art, with Isaac Vega</h1>
+                        <h2>by Candice Harris | BoardGameGeek News</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="bgg_news">
+        <div class="title">
+            <a href="https://boardgamegeek.com/">BoardGameGeek News</a>
+        </div>
+        <div class="slider">
+            <div class="wrapper">
+                <section id="section1">
+                    <a href="#section2" class="arrow__btn">‹</a>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/148620/bggspring-report-iii-lacuna-inside-job-number-dual">
+                            <img src="https://cf.geekdo-images.com/kYZoWRZUfVD_g4TefiBu-Q__medium/img/zVv1x-g2p_dTdqm-L-IfPytSe0o=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7488897.png">
+                            <div class="news_tit">
+                                BGG.Spring Report III
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/148617/upper-deck-suing-ravensburger-and-ryan-miller-over">
+                            <img src="https://cf.geekdo-images.com/MYodBgPP1FnDui6Z27CmPg__thumb/img/it3-QhY3Cbl6FrAaQTHny7p-8uM=/fit-in/200x150/filters:strip_icc()/pic1431001.jpg">
+                            <div class="news_tit">
+                                Upper Deck Is Suing
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/148581/francophone-smurfs-smurf-smurf-based-smurfy-smurf">
+                            <img src="https://cf.geekdo-images.com/477p-RSmx9-Oc7n8DoZzkQ__medium/img/5hZaYWB-R-Eumz-RBsqjtpFfSjU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7555387.png">
+                            <div class="news_tit">
+                                Smurfy Smurf in 2024
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/148536/what-do-game-publishers-owe-us-when-they-release-n">
+                            <img src="https://cf.geekdo-images.com/IHOUjBZ9ziMeYTRWp2hYAA__thumb/img/_dAo-_rzbTzm_oIQscu7NSQ5-hE=/fit-in/200x150/filters:strip_icc()/pic4848678.jpg">
+                            <div class="news_tit">
+                                Game Publishers Owe Us
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="https://cf.geekdo-images.com/3uzwoSV4R9A6h2SyKkLuSQ__thumb/img/1ZN1PkVQlGrWNAhvKlqWlL73rdE=/fit-in/200x150/filters:strip_icc()/pic4223752.jpg">
+                        </a>
+                    </div>
+                    <a href="#section2" class="arrow__btn">›</a>
+                </section>
+                <section id="section2">
+                    <a href="#section1" class="arrow__btn">‹</a>
+                    <div class="item">     
+                        <a href="https://boardgamegeek.com/blogpost/148535/gen-con-2023-preview-now-live">   
+                            <img src="https://cf.geekdo-images.com/3uzwoSV4R9A6h2SyKkLuSQ__thumb/img/1ZN1PkVQlGrWNAhvKlqWlL73rdE=/fit-in/200x150/filters:strip_icc()/pic4223752.jpg">
+                            <div class="news_tit">
+                                Gen Con 2023
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/148341/capture-flag-anew-challengers-2">
+                            <img src="https://cf.geekdo-images.com/BHDzfGC4Mbsb3yUoWzl9ww__medium/img/NPPRUooRuIEUo2lPLZi2920MONs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7543477.jpg">
+                            <div class="news_tit">
+                                Challengers! 2
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/148391/gloomhaven-second-edition-coming-2024">
+                            <img src="https://cf.geekdo-images.com/y9jK4VRPjTLO2S6T-xz8sw__imagepage/img/XCq_jAZ8zg3ZLisqID4cOj6SGT4=/fit-in/900x600/filters:no_upscale():strip_icc()/pic7546274.jpg">
+                            <div class="news_tit">
+                                Gloomhaven in 2024
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/141892/designer-diary-autobahn">
+                            <img src="https://cf.geekdo-images.com/rEHUfF9UeA6lY6EvRLgBIg__medium/img/r74ETGmOn4BmsdprFf3-7u6sgJw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6447828.jpg">
+                            <div class="news_tit">
+                                Designer Diary: Autobahn
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cf.geekdo-images.com/kYZoWRZUfVD_g4TefiBu-Q__imagepage/img/lJX-QGBKmiP_NsGSl2oFOoMmam0=/fit-in/900x600/filters:no_upscale():strip_icc()/pic7488897.png">
+                        </a>
+                    </div>
+                    <a href="#section1" class="arrow__btn">›</a>
+                </section> 
+            </div>
+        </div>
+    </div>
+    <div class="bga_news">
+        <div class="title">
+            <a href="https://boardgamearena.com/headlines">BoardGameArena News</a>
+        </div>
+        <div class="slider">
+            <div class="wrapper">
+                <section id="section3">
+                    <a href="#section4" class="arrow__btn">‹</a>
+                    <div class="item">
+                        <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30930">
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_LINEMIND_BGA.jpg">
+                            <div class="news_tit">
+                                LINE-IT & MIND UP!
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30848">
+                            <img src="https://x.boardgamearena.net/data/newsimg/greg_goodbye.png">
+                            <div class="news_tit">
+                                Goodbye n Good Games!
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30900">
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_ELAWA.jpg">
+                            <div class="news_tit">
+                                ELAWA
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30802">
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_NEXTSTATIONTOKYO_BGA.jpg">
+                            <div class="news_tit">
+                                Next station Tokyo!
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_ARKNOVA.jpg">
+                        </a>
+                    </div>
+                    <a href="#section4" class="arrow__btn">›</a>
+                </section>
+                <section id="section4">
+                    <a href="#section3" class="arrow__btn">‹</a>
+                    <div class="item">     
+                        <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30698">   
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_ARKNOVA.jpg">
+                            <div class="news_tit">
+                                ARK NOVA
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30678">
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_ASTRA_BGA.jpg">
+                            <div class="news_tit">
+                                ASTRA
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamegeek.com/blogpost/148391/gloomhaven-second-edition-coming-2024">
+                            <img src="https://cf.geekdo-images.com/y9jK4VRPjTLO2S6T-xz8sw__imagepage/img/XCq_jAZ8zg3ZLisqID4cOj6SGT4=/fit-in/900x600/filters:no_upscale():strip_icc()/pic7546274.jpg">
+                            <div class="news_tit">
+                                Gloomhaven in 2024
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://boardgamearena.com/forum/viewtopic.php?f=10&t=30602">
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_HADARA_BGA.jpg">
+                            <div class="news_tit">
+                                HADARA
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://x.boardgamearena.net/data/newsimg/BANNER_LINEMIND_BGA.jpg">
+                        </a>
+                    </div>
+                    <a href="#section3" class="arrow__btn">›</a>
+                </section> 
+            </div>
+        </div>
+    </div>
+    <div class="tf_news">
+        <div class="title">
+            <a href="#">TableFlip News</a>
+        </div>
+        <div class="slider">
+            <div class="wrapper">
+                <section id="section5">
+                    <a href="#section6" class="arrow__btn">‹</a>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                            <div class="news_tit">
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                            <div class="news_tit">
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                            <div class="news_tit">
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                            <div class="news_tit">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="img/event.png">
+                        </a>
+                    </div>
+                    <a href="#section6" class="arrow__btn">›</a>
+                </section>
+                <section id="section6">
+                    <a href="#section5" class="arrow__btn">‹</a>
+                    <div class="item">     
+                        <a href="#">   
+                            <img src="img/event.png">
+                            <div class="news_tit">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                            <div class="news_tit">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                            <div class="news_tit">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                            <div class="news_tit">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/event.png">
+                        </a>
+                    </div>
+                    <a href="#section5" class="arrow__btn">›</a>
+                </section> 
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- contract -->
+    <div class="footer">
+        <div>
+            <i class="fa-regular fa-envelope"></i>
+            20t1020648@gmail.com
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            0906494866
+        </div>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            https://www.facebook.com/profile.php?id=100015448844410
+        </div>
+    </div>
+    <script src="js/filter.js"></script>
+</body>
+</html>

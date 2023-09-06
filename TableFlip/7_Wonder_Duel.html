@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Table Flip | 7 Wonders Duel</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+  <header>
+    <nav class="nav_bar">
+        <div class="logo_holder">
+            <a href="index.html">
+                <img src="img/TableFlip_logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="search_bar_holder">
+            <form action="#" class="search_box">
+                <input type="text" class="search_text" placeholder="search" required>
+                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </label>
+        <ul class="menu">
+            <li><a href="filter.html" class="menu_text">Games</a></li>
+            <li><a href="news.html" class="menu_text">News</a></li>
+            <li><a href="#" class="menu_text">Forums</a></li>
+            <li><a href="about.html" class="menu_text">About</a></li>
+            <li><a href="signin.html" class="menu_text" id="login-mobile">login</a></li>
+        </ul>
+        <div class="login_holder">
+            <div>
+                <a href="signin.html" class="login">login</a>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- detail -->
+    <div class="detail">
+      <div class="title_container" style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%), url(img/7_wonders_duel_banner.jpg);">
+        <div class="title_img">
+          <img src="img/7_wonders_duel_detail.jpg">
+        </div>
+        <div class="title_des">
+          <div class="game_title">
+            7 Wonders Duel (2015)
+          </div>
+          <div class="quote">Science? Military? What will you draft to win this head-to-head version of 7 Wonders?</div>
+          <div class="rating">
+            <div class="average_rating">
+              <div class="rating_top">
+                <img src="img/BoardGameGeek_Logo.png" class="bgg_logo"> Rating
+              </div>
+              <div class="rating_bot">
+                <i class="fa-solid fa-star" style="color: #fae500;"></i>8.1 / 10
+              </div>
+            </div>
+            <div class="time">
+              <div class="rating_top"><h1>Playing Time</h1></div>
+              <div class="rating_bot">
+                <i class="fa-regular fa-clock" style="color: #ffffff;"></i>11 - 30 min
+              </div>
+            </div>
+            <div class="complexity">
+              <div class="rating_top"><h1>Complexity</h1></div>
+              <div class="rating_bot">
+                2.25 / 5
+              </div>
+            </div>
+          </div>
+          <div class="detail_tag">
+            <a href="#" class="detail_tag_wrapper">
+              <div class="detail_tag_container">
+                <span class="game_tags">
+                  Best for 2
+                </span>
+              </div>
+            </a>
+            <a href="#" class="detail_tag_wrapper">
+              <div class="detail_tag_container">
+                <span class="game_tags">
+                  Historical
+                </span>
+              </div>
+            </a>
+            <a href="#" class="detail_tag_wrapper">
+              <div class="detail_tag_container">
+                <span class="game_tags">
+                  Cards
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="more_detail">
+        <div class="more_detail_left">
+          <div class="about">
+            <h2>About</h2>
+            <p>In many ways 7 Wonders Duel resembles its parent game 7 Wonders as over three ages players acquire cards that provide resources or advance their military or scientific development in order to develop a civilization and complete wonders.
+
+            What's different about 7 Wonders Duel is that, as the title suggests, the game is solely for two players, with the players not drafting cards simultaneously from hands of cards, but from a display of face-down and face-up cards arranged at the start of a round<span id="dots">...</span><span id="more">. A player can take a card only if it's not covered by any others, so timing comes into play as well as bonus moves that allow you to take a second card immediately. As in the original game, each card that you acquire can be built, discarded for coins, or used to construct a wonder.
+
+            Each player starts with four wonder cards, and the construction of a wonder provides its owner with a special ability. Only seven wonders can be built, though, so one player will end up short.
+              
+            Players can purchase resources at any time from the bank, or they can gain cards during the game that provide them with resources for future building; as you acquire resources, the cost for those particular resources increases for your opponent, representing your dominance in this area.
+              
+            A player can win 7 Wonders Duel in one of three ways: each time you acquire a military card, you advance the military marker toward your opponent's capital, giving you a bonus at certain positions; if you reach the opponent's capital, you win the game immediately; similarly, if you acquire any six of seven different scientific symbols, you achieve scientific dominance and win immediately; if none of these situations occurs, then the player with the most points at the end of the game wins.</span></p>
+            <button onclick="morelessbutton()" id="myBtn">Read more</button>
+          </div>
+          <div class="detail_img">
+            <h1>images</h1>
+            <div class="zoom_container">
+              <img src="img/7_wonders_duel_banner.jpg" class="box">
+              <img src="img/7_wonders_duel_detail1.jpg" class="box">
+              <img src="img/7_wonders_duel_detail2.jpg" class="box">
+              <img src="img/7_wonders_duel_detail3.jpg" class="box">
+            </div>
+          </div>
+          <div class="buys_now">
+            <h2>Buys Now</h2>
+            <a href="https://www.amazon.com/dp/B014DMSTXK/ref=as_sl_pc_tf_til?tag=boardgamegeek-20&linkCode=w00&linkId=&creativeASIN=B014DMSTXK" class="buy">
+              <div class="img_buy">
+                <img src="img/amazone_logo.png">
+                <img src="img/7_wonders_duel_box.jpg">
+              </div>
+              <h1>$27.99</h1>
+            </a>
+          </div>
+        </div>
+        <div class="more_detail_mid">
+          <div class="rules">
+            <h1>Game rules</h1>
+            <div class="rules_file_container">
+              <div class="rules_file">
+                <a href="https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders-duel/en/7du-rules-us-15990558193s5I6.pdf">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Rules</h1>
+                </a>
+              </div>
+              <div class="rules_file">
+                <a href="https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders-duel-pantheon/en/7dpa-rules-en-1624535175WPszB.pdf">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Rules Pantheon Expansion</h1>
+                </a>
+              </div>
+              <div class="rules_file">
+                <a href="https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders-duel-agora/en/7dag-rules-en-1624535505VDrdL.pdf">
+                  <i class="fa-regular fa-file-lines" style="color: #000000;"></i>
+                  <h1>Rules Agora Expansion</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="infomation">
+            <h1>Game information</h1>
+            <div class="information_container">
+              <img src="img/7_wonders_duel_information.png">
+              <div class="info">
+              <div class="info_left">
+                <ul>
+                  <li>Designer</li>
+                  <li>Artist</li>
+                  <li>Publisher</li>
+                  <li>Year</li>
+                  <li>Number of players</li>
+                  <li>Game duration</li>
+                  <li>Complexity</li>
+                  <li>Strategy</li>
+                  <li>Luck</li>
+                  <li>Interaction</li>
+                </ul>
+              </div>
+              <div class="info_right">
+                <ul>
+                  <li>Antoine Bauza, Bruno Cathala</li>
+                  <li>Miguel Coimbra</li>
+                  <li>Repos Production</li>
+                  <li>2015</li>
+                  <li>2 players</li>
+                  <li>11 - 30 min</li>
+                  <li>3 / 5</li>
+                  <li>4 / 5</li>
+                  <li>2 / 5</li>
+                  <li>3 / 5</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="more_detail_right">
+          <div class="Video">
+            <h1>Videos</h1>
+            <iframe width="420" height="315"src="https://www.youtube.com/embed/SxQkMRUvCJ8"></iframe>
+            <iframe width="420" height="315"src="https://www.youtube.com/embed/v6CQFd4Enf0"></iframe>
+          </div>
+          <div class="more_info">
+            <h1> For more information</h1>
+            <a href="https://boardgamegeek.com/boardgame/173346/7-wonders-duel">
+              7 Wonders Duel on BoardGameGeek
+              <img src="img/BoardGameGeek_Logo.png">
+            </a>
+            <a href="https://boardgamearena.com/gamepanel?game=sevenwondersduel">
+              7 Wonders Duel on Boardgame Arena
+              <img src="img/BoardGameArena_Logo.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+<!-- footer -->
+    <div class="footer">
+      <div>
+          <i class="fa-regular fa-envelope"></i>
+          20t1020648@gmail.com
+      </div>
+      <div>
+          <i class="fa-solid fa-phone"></i>
+          0906494866
+      </div>
+      <div>
+          <i class="fa-brands fa-facebook"></i>
+          https://www.facebook.com/profile.php?id=100015448844410
+      </div>
+  </div>
+<script src="js/morelessbutton.js"></script>
+<script src="js/imgzoomfull.js"></script>
+</body>
+</html>

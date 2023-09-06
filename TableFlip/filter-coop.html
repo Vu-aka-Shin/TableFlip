@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Games</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+    <header>
+        <nav class="nav_bar">
+            <div class="logo_holder">
+                <a href="index.html">
+                    <img src="img/TableFlip_logo.png" class="logo"/>
+                </a>
+            </div>
+            <div class="search_bar_holder">
+                <form action="#" class="search_box">
+                    <input type="text" class="search_text" placeholder="search" required>
+                        <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </label>
+            <ul class="menu">
+                <li><a href="filter.html" class="menu_text">Games</a></li>
+                <li><a href="news.html" class="menu_text">News</a></li>
+                <li><a href="#" class="menu_text">Forums</a></li>
+                <li><a href="about.html" class="menu_text">About</a></li>
+                <li><a href="signin.html" class="menu_text" id="login-mobile">login</a></li>
+            </ul>
+            <div class="login_holder">
+                <div>
+                    <a href="signin.html" class="login">login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <div id="left">
+        <div id="accordion">
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Bluffing">Bluffing</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Cards">Cards</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Conquest">Conquest</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Deck Building">Deck Building</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Dice">Dice</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Historical">Historical</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Roles">Roles</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Casual games">Casual games</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Family">Family</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Fantasy">Fantasy</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Cooperative" checked>Cooperative</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Party games">Party games</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Solo">Solo</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Short games">Short games</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Best for 2">Best for 2</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Building">Building</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Worker placement">Worker placement</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Tile placement">Tile placement</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Exploration">Exploration</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Hand management">Hand management</label>
+            <label><input onchange="FilterGame()" type="checkbox" class="tags" value="Science fiction">Science fiction</label>
+      </div>
+    </div>
+    <div id="right">
+        <div id="list1">
+    
+        </div>
+    </div>
+</main>
+<div class="footer">
+    <div>
+        <i class="fa-regular fa-envelope"></i>
+        20t1020648@gmail.com
+    </div>
+    <div>
+        <i class="fa-solid fa-phone"></i>
+        0906494866
+    </div>
+    <div>
+        <i class="fa-brands fa-facebook"></i>
+        https://www.facebook.com/profile.php?id=100015448844410
+    </div>
+</div>
+<script src="js/filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.logo{
+    max-width: 4.375rem;
+    height: 4.375rem;
+}
+header{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(0.313rem);
+    box-shadow: 0rem 0.313rem 0.938rem 0rem gray;
+}
+/* search */
+.search_bar_holder{
+    margin-left: 1.875rem;
+}
+.search_box{
+    background: white;
+    border-radius: 1.875rem;
+}
+.search_text{
+    border: none;
+    outline: none;
+    background: none;
+    max-width: 0;
+    padding: 0;
+    transition: all 0.25s ease-in-out;
+}
+.search_btn{
+    cursor: pointer;
+    background-color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    transform: translate(-0.125rem,0rem);
+}
+.search_box:hover .search_text, .search_box .search_text:valid{
+    max-width: 6.25rem;
+    padding: 0rem 0rem 0rem 0.938rem;
+}
+/* menu text */
+.menu_text{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    margin-right: 1.563rem;
+    margin-left: 1.563rem;
+    font-size: 1.25rem;
+    padding: 0.625rem 1.25rem;
+    color: black;
+    border: 0.125rem solid transparent;
+    transition: 0.25s;
+}
+.menu_text::before{
+    content: '';
+    position: absolute;
+    inset: 0 0.5rem;
+    border-left: 0.125rem solid black;
+    border-right: 0.125rem solid black;
+    transition: 0.5s;
+}
+.menu_text::after{
+    content: '';
+    position: absolute;
+    inset: 0.5rem 0;
+    border-top: 0.125rem solid black;
+    border-bottom: 0.125rem solid black;
+    transition: 0.5s;
+}
+.menu_text:hover::before{
+    inset: 0;
+    transform: rotate(-10deg);
+}
+.menu_text:hover::after{
+    inset: 0 -0.25rem;
+    transform: rotate(5deg);
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu>li{
+    list-style: none;
+    position: relative;
+}
+/* login */
+.login{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.625rem 1.25rem;
+    color: black;
+    border: 0.125rem solid transparent;
+    transition: 0.25s;
+    font-family: Arial;
+}
+.login::before, .login::after{
+    content: '';
+    position: absolute;
+    inset: 0.5rem;
+    border-top: 0.125rem solid black;
+    border-bottom: 0.125rem solid black;
+    border-left: 0.125rem solid black;
+    border-right: 0.125rem solid black;
+    transition: 0.25s;
+}
+.login:hover::before{
+    transform: translate(-0.188rem, -0.188rem);
+}
+.login:hover::after{
+    transform: translate(0.188rem, 0.188rem);
+}
+
+/* mobile */
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+.nav_bar input#menu-toggler {
+  display: none;
+}
+.nav_bar #hamburger-btn {
+  cursor: pointer;
+  display: none;
+}
+#login-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 860px){
+    /* .search_bar_holder{
+        display: none;
+    } */
+    .nav_bar #menu-toggler:checked~.menu{
+        left: 0;
+        background-color: rgba(255, 255, 255, .15);
+        box-shadow: 0rem 0.313rem 0.938rem 0rem gray;
+        z-index: 1 ;
+    }
+    .login_holder{
+        padding-left: 23.5rem;
+    }
+    .login_holder{
+        display:none;
+    }
+    .nav_bar .menu li {
+        font-size: 18px;
+    }
+    .nav_bar #hamburger-btn {
+        display: block;
+    }
+    .nav_bar .menu{
+        position: fixed;
+        left: -100%;
+        width: 300px;
+        display: block;
+        height: 100vh;
+        top: 75px;
+        background: #333;
+        transition: left 0.3s ease;
+    }
+    #login-mobile{
+    display: inline-block;
+}
+}
+
+    </style>
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+    <header>
+        <nav class="nav_bar">
+            <div class="logo_holder">
+                <a href="#">
+                    <img src="img/TableFlip_logo.png" class="logo"/>
+                </a>
+            </div>
+            <div class="search_bar_holder">
+                <form action="#" class="search_box">
+                    <input type="text" class="search_text" placeholder="search" required>
+                        <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </label>
+            <ul class="menu">
+                <li><a href="filter.html" class="menu_text">Games</a></li>
+                <li><a href="news.html" class="menu_text">News</a></li>
+                <li><a href="#" class="menu_text">Forums</a></li>
+                <li><a href="#" class="menu_text">About</a></li>
+                <li><a href="login.html" class="menu_text" id="login-mobile">login</a></li>
+            </ul>
+            <div class="login_holder">
+                <div>
+                    <a href="login.html" class="login">login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

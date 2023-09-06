@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Table Flip</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('img/back_main.jpg');">
+    <header>
+        <nav class="nav_bar">
+            <div class="logo_holder">
+                <a href="index.html">
+                    <img src="img/TableFlip_logo.png" class="logo"/>
+                </a>
+            </div>
+            <div class="search_bar_holder">
+                <form action="#" class="search_box">
+                    <input type="text" class="search_text" placeholder="search" required>
+                        <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </label>
+            <ul class="menu">
+                <li><a href="filter.html" class="menu_text">Games</a></li>
+                <li><a href="news.html" class="menu_text">News</a></li>
+                <li><a href="#" class="menu_text">Forums</a></li>
+                <li><a href="about.html" class="menu_text">About</a></li>
+                <li><a href="signin.html" class="menu_text" id="login-mobile">login</a></li>
+            </ul>
+            <div class="login_holder">
+                <div>
+                    <a href="signin.html" class="login">login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- tag -->
+    <section class="tags">
+        <div class="tags_holder">
+            <div class="tags_slider">
+                <div class="marquee">
+                    <div class="marquee-group">
+                        <a href='filter_cards.html' class="marquee-tag-wrapper">
+                        <div class="marquee-tag-container">
+                            <span 
+                                class="marquee-tag">Cards
+                            </span> 
+                        </div>
+                        </a>
+                        <a href='filter-historical.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Historical
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-roles.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Roles
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-casual.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Casual games
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-family.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Family
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-coop.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Cooperative
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-party.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Party games
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-solo.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Solo
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-short.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Short games
+                                </span> 
+                            </div>
+                        </a>
+                        <a href='filter-bf2.html' class="marquee-tag-wrapper">
+                            <div class="marquee-tag-container">
+                                <span 
+                                    class="marquee-tag">Best for 2
+                                </span> 
+                            </div>
+                        </a>
+                    </div>
+                        <div aria-hidden="true" class="marquee-group">
+                            <a href='filter_cards.html' class="marquee-tag-wrapper">
+                                <div class="marquee-tag-container">
+                                    <span 
+                                        class="marquee-tag">Cards
+                                    </span> 
+                                </div>
+                                </a>
+                                <a href='filter-historical.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Historical
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-roles.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Roles
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-casual.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Casual games
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-family.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Family
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-coop.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Cooperative
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-party.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Party games
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-solo.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Solo
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-short.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Short games
+                                        </span> 
+                                    </div>
+                                </a>
+                                <a href='filter-bf2.html' class="marquee-tag-wrapper">
+                                    <div class="marquee-tag-container">
+                                        <span 
+                                            class="marquee-tag">Best for 2
+                                        </span> 
+                                    </div>
+                                </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="tags_search">
+            <a href="filter.html" class="tags_btn"><i class="fa-solid fa-tags"></i></a>
+        </div>
+    </section>
+    <!-- bondary -->
+    <div class="boundary">
+        <i class="fa-regular fa-face-smile"></i>
+    </div>
+    <!-- slider game 1 -->
+    <div class="title">
+        <a href="#">Popular now</a>
+    </div>
+    <div class="slider">
+        <div class="wrapper">
+            <section id="section1">
+                <a href="#section3" class="arrow__btn">‹</a>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/wingspan.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="Azul.html">
+                        <img src="img/azul.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/catan.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/ticket_to_ride.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/carcassonne.jpg">
+                    </a>
+                </div>
+                <a href="#section2" class="arrow__btn">›</a>
+            </section>
+            <section id="section2">
+                <a href="#section1" class="arrow__btn">‹</a>
+                <div class="item">     
+                    <a href="#">   
+                        <img src="img/carcassonne.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/its_a_wonderful_world.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="7_Wonder_Duel.html">
+                        <img src="img/7_wonders_duel.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/splendor.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/castles_of_burgundy.jpg">
+                    </a>
+                </div>
+                <a href="#section3" class="arrow__btn">›</a>
+            </section>
+            <section id="section3">
+                <a href="#section2" class="arrow__btn">‹</a>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/castles_of_burgundy.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/space_base.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="Agricola.html">
+                        <img src="img/agricola.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/lost_ruins_of_arnak.jpg">
+                    </a>
+                </div>       
+                <div class="item">
+                    <a href="#">
+                        <img src="img/wingspan.jpg">
+                    </a>
+                </div>       
+                <a href="#section1" class="arrow__btn">›</a>       
+            </section>     
+        </div>
+    </div>
+    <!-- boundary -->
+    <div class="boundary">
+        <i class="fa-brands fa-slack"></i>
+    </div>
+    <!-- slider game 2 -->
+    <div class="title">
+        <a href="#">For beginner</a>
+    </div>
+    <div class="slider">
+        <div class="wrapper">
+            <section id="section4">
+                <a href="#section6" class="arrow__btn">‹</a>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/yahtzee.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/lucky_number.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/skull.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/solo.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/love_letter.png">
+                    </a>
+                </div>
+                <a href="#section5" class="arrow__btn">›</a>        
+            </section>        
+            <section id="section5">        
+                <a href="#section4" class="arrow__btn">‹</a>       
+                <div class="item">
+                    <a href="#">
+                        <img src="img/love_letter.png">
+                    </a>
+                </div>        
+                <div class="item">
+                    <a href="#">
+                        <img src="img/papayoo.png">
+                    </a>
+                </div>        
+                <div class="item">
+                    <a href="Bubblee_Pop.html">
+                        <img src="img/bubblee_pop.png">
+                    </a>
+                </div>        
+                <div class="item">
+                    <a href="#">
+                        <img src="img/bandido.png">
+                    </a>
+                </div>        
+                <div class="item">        
+                    <img src="img/martian_dice.png">        
+                </div>        
+                <a href="#section6" class="arrow__btn">›</a>        
+            </section>       
+            <section id="section6">        
+                <a href="#section5" class="arrow__btn">‹</a>        
+                <div class="item">
+                    <a href="#">
+                        <img src="img/martian_dice.png">
+                    </a>
+                </div>        
+                <div class="item">
+                    <a href="#">
+                        <img src="img/oh_hell.png">
+                    </a> 
+                </div>        
+                <div class="item">
+                    <a href="#">       
+                        <img src="img/chromino.png">
+                    </a>
+                </div>      
+                <div class="item">
+                    <a href="#">   
+                        <img src="img/coup.png">
+                    </a>   
+                </div>       
+                <div class="item">
+                    <a href="#">    
+                        <img src="img/yahtzee.png">
+                    </a>
+                </div>       
+                <a href="#section4" class="arrow__btn">›</a>       
+            </section>     
+        </div>
+    </div>
+    <!-- boundary -->
+    <div class="boundary">
+        <i class="fa-solid fa-expand"></i>
+    </div>
+    <!-- slider events -->
+    <div class="title">
+        <a href="#">Events</a>
+    </div>
+    <div class="slider">
+        <div class="wrapper">
+            <section id="section7">
+                <a href="#section9" class="arrow__btn">‹</a>
+                <div class="item">
+                    <img src="img/event.png">
+                </div>
+                <div class="item">
+                    <img src="img/event.png">
+                </div>
+                <div class="item">
+                    <img src="img/event.png">
+                </div>
+                <div class="item">
+                    <img src="img/event.png">
+                </div>
+                <div class="item">
+                    <img src="img/event.png">
+                </div>
+                <a href="#section8" class="arrow__btn">›</a>        
+            </section>        
+            <section id="section8">        
+                <a href="#section7" class="arrow__btn">‹</a>       
+                <div class="item">        
+                    <img src="img/event.png">        
+                </div>        
+                <div class="item">        
+                    <img src="img/event.png">        
+                </div>        
+                <div class="item">       
+                    <img src="img/event.png">        
+                </div>        
+                <div class="item">        
+                    <img src="img/event.png">       
+                </div>        
+                <div class="item">        
+                    <img src="img/event.png">        
+                </div>        
+                <a href="#section9" class="arrow__btn">›</a>        
+            </section>       
+            <section id="section9">        
+                <a href="#section8" class="arrow__btn">‹</a>        
+                <div class="item">        
+                    <img src="img/event.png">       
+                </div>        
+                <div class="item">        
+                    <img src="img/event.png">        
+                </div>        
+                <div class="item">       
+                    <img src="img/event.png">       
+                </div>      
+                <div class="item">       
+                    <img src="img/event.png">       
+                </div>       
+                <div class="item">       
+                    <img src="img/event.png">       
+                </div>       
+                <a href="#section7" class="arrow__btn">›</a>       
+            </section>     
+        </div>
+    </div>
+    <!-- contract -->
+    <div class="footer">
+        <div>
+            <i class="fa-regular fa-envelope"></i>
+            20t1020648@husc.edu.vn
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            0906494866
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100015448844410">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+    <script src="js/filter.js"></script>
+</body>
+</html>
